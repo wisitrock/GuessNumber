@@ -5,4 +5,6 @@
     <string name="exit">ปิด</string>
     <string name="hint">กรอกตัวเลยระหว่าง 0 ถึง 100</string>
     <string name="title">ทายเลข</string>
+    <string name="exit_titile">ออกจากแอพ</string>
+    <string name="exit_message">คุณต้องการจะออกจากแอพใช่ไหม</string>
 </resources>

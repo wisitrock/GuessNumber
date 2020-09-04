@@ -7,6 +7,9 @@ import java.util.Random;
 public class Answer {
     private int value;
 
+    public enum GuessResult{
+        OVER,UNDER,OK
+    }
     public Answer() {
         randomvalue();
     }
@@ -16,17 +19,17 @@ public class Answer {
         this.value = r.nextInt(100);
         Log.i("MainActivity","ค่าของ answer ที่สุ่มได้คือ "+this.value);
     }
-   public String checkAnswer(int num){
-        String msg;
+   public GuessResult checkAnswer(int num){
+        GuessResult result;
         if(num==this.value){
-            msg="ถูกต้องครับไอสัส";
+            result=GuessResult.OK;
         }else if (num>this.value) {
             //ทายตัวเลยที่มากเกินไป
-            msg="ผิดครับทายมากเกินไป";
+            result=GuessResult.OVER;
         }else{
             //ทายตัวเลยที่มากเกินไป
-            msg="ผิดครับทายน้อยเกินไป";
+            result=GuessResult.UNDER;
         }
-        return  msg;
+        return  result;
     }
 }

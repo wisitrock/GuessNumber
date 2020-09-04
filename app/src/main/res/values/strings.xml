@@ -4,4 +4,6 @@
     <string name="exit">Exit</string>
     <string name="hint">Enter Number between 0 to 100</string>
     <string name="title">"Guess the number "</string>
+    <string name="exit_titile">Exit Guess Nubmer</string>
+    <string name="exit_message">Are You Sure?. You Want To Exit</string>
 </resources>
